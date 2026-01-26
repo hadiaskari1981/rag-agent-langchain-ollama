@@ -81,7 +81,7 @@ You can replace `llama3` with any other supported model depending on your hardwa
 
 ### Start Ollama
 
-Ollama runs as a local service automatically. By default:
+Ollama runs as a local service automatically. By default
 - API endpoint: `http://localhost:11434`
 
 Test embeddings:
@@ -116,7 +116,7 @@ jupyter notebook
 
 ---
 
-## 4. Notebook Walkthrough (`semantic_search.ipynb`)
+## 4. Notebook Walkthrough (`rag_agent_1.ipynb`)
 
 The notebook is structured as follows:
 
@@ -136,11 +136,8 @@ The notebook is structured as follows:
    - Prepare documents
    - Embed and upsert into Qdrant
 
-5. **Semantic Search**
-   - Embed query
-   - Retrieve nearest neighbors from Qdrant
 
-6. **Optional Generation (RAG-style)**
+5. **Generation (RAG-agent)**
    - Pass retrieved context to Ollama LLM
    - Generate a grounded response
 
@@ -155,9 +152,4 @@ The notebook is structured as follows:
   - Batch upserts
   - Metadata filtering
 
----
-
-## License
-
-MIT (or adapt as needed)
 
