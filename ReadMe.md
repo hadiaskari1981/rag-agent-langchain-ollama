@@ -13,7 +13,7 @@ The goal is to provide a fully offline, reproducible setup suitable for experime
 ## Repository Structure
 ```
 .
-├── semantic_search.ipynb   # Main notebook: ingestion, embedding, search, generation
+├── rag_agent_1.ipynb   # Main notebook: ingestion, embedding, search, generation
 ├── README.md              # This file
 ```
 
