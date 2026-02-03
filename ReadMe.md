@@ -1,10 +1,10 @@
-# Local RAG with Qdrant & Ollama
+# Local RAG with qdrant & Ollama
 
 ## Overview
 This repository demonstrates a **local-first semantic search / RAG pipeline** using:
-- **Qdrant** as a vector database (running locally via Docker)
+- **qdrant** as a vector database (running locally via Docker)
 - **Ollama** for local embeddings and text generation
-- A Jupyter notebook (`rag_agent_1.ipynb`) that walks through ingestion, embedding, storage, and querying
+  - A Jupyter notebook (`rag_agent_langchain.ipynb`) that walks through ingestion, embedding, storage, and querying
 
 The goal is to provide a fully offline, reproducible setup suitable for experimentation, prototyping, and learning.
 
@@ -13,7 +13,9 @@ The goal is to provide a fully offline, reproducible setup suitable for experime
 ## Repository Structure
 ```
 .
-├── rag_agent_1.ipynb   # Main notebook: ingestion, embedding, search, generation
+├── rag_agent_langchain.ipynb   # Main notebook: ingestion, embedding, search, generation
+├── rag_agent_langgraph.ipynb   # Main notebook: ingestion, embedding, search, generation
+├── hybrid_ops_copilot.ipynb   # Main notebook: ingestion, embedding, search, generation
 ├── README.md              # This file
 ```
 
@@ -116,7 +118,7 @@ jupyter notebook
 
 ---
 
-## 4. Notebook Walkthrough (`rag_agent_1.ipynb`)
+## 4. Notebook Walkthrough (`rag_agent_langchain.ipynb`)
 
 The notebook is structured as follows:
 
@@ -145,10 +147,10 @@ The notebook is structured as follows:
 
 ## 5. Notes & Best Practices
 
-- Embeddings are **required** for semantic search; Qdrant stores vectors, not raw text.
+- Embeddings are **required** for semantic search; qdrant stores vectors, not raw text.
 - Keep embedding and query models consistent.
 - For production, consider:
-  - Persistent volumes for Qdrant
+  - Persistent volumes for qdrant
   - Batch upserts
   - Metadata filtering
 

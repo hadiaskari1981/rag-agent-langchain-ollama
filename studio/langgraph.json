@@ -1,6 +1,7 @@
 {
   "graphs": {
-    "rag_agent": "./rag_agent.py:graph"
+    "rag_agent": "./rag_agent_langgraph.py:graph",
+    "rag_agent": "./hybrid_ops_copilot.py:graph"
   },
   "env": "../.env",
   "python_version": "3.12",
